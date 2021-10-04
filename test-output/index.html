@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-API_Test">
-              <span class="suite-name border-failed">API Test</span>
+              <span class="suite-name border-passed">API Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,35 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-API_Test" class="hide-methods failed suite-API_Test"> (hide)</a> <!-- hide-methods failed suite-API_Test -->
-                      <a href="#" panel-name="suite-API_Test" class="show-methods failed suite-API_Test"> (show)</a> <!-- show-methods failed suite-API_Test -->
-                    </span>
-                    <div class="method-list-content failed suite-API_Test">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-API_Test -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-API_Test" class="hide-methods skipped suite-API_Test"> (hide)</a> <!-- hide-methods skipped suite-API_Test -->
-                      <a href="#" panel-name="suite-API_Test" class="show-methods skipped suite-API_Test"> (show)</a> <!-- show-methods skipped suite-API_Test -->
-                    </span>
-                    <div class="method-list-content skipped suite-API_Test">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics" hash-for-method="MangoTest2">MangoTest2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-API_Test -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -130,7 +102,17 @@
                     <div class="method-list-content passed suite-API_Test">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics" hash-for-method="MangoTest2">MangoTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics2" hash-for-method="MobileTest">MobileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics" hash-for-method="Test1(www.google.com)">Test1(www.google.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -155,54 +137,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-API_Test" class="panel API_Test">
-          <div class="suite-API_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">io.restassured.kt.TestNgBasics</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;URL&apos; is required by @Test on method Test1 but has not been marked @Optional or defined
-in C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify that a placeOrder Transactions from MOZU-LWW is successful)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Test-class-failed -->
-          <div class="suite-API_Test-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">io.restassured.kt.TestNgBasics</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="MangoTest2">
-                  </a> <!-- MangoTest2 -->
-                  <span class="method-name">MangoTest2</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestNgBasics.MangoTest2()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41] depends on not successfully finished methods
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 9 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-API_Test-class-skipped -->
           <div class="suite-API_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -233,6 +167,23 @@ in C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="MangoTest2">
+                  </a> <!-- MangoTest2 -->
+                  <span class="method-name">MangoTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test1(www.google.com)">
+                  </a> <!-- Test1(www.google.com) -->
+                  <span class="method-name">Test1</span>
+                  <span class="parameters">(www.google.com)</span>
+                  <em>
+(Verify that a placeOrder Transactions from MOZU-LWW is successful)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Test3">
                   </a> <!-- Test3 -->
                   <span class="method-name">Test3</span>
@@ -250,6 +201,10 @@ in C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;API Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;URL&quot; value=&quot;www.google.com&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.wkhealth.reusable.resources.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;2&quot; name=&quot;TestNg Basics 1&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;io.restassured.kt.TestNgBasics&quot;/&gt;
@@ -316,28 +271,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'MobileTest')
 data.setCell(0, 2, 'io.restassured.kt.TestNgBasics2')
-data.setCell(0, 3, 18);
+data.setCell(0, 3, 22);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test3')
+data.setCell(1, 1, 'Test1')
 data.setCell(1, 2, 'io.restassured.kt.TestNgBasics')
-data.setCell(1, 3, 16);
+data.setCell(1, 3, 21);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'WindowsTest')
 data.setCell(2, 2, 'io.restassured.kt.TestNgBasics2')
-data.setCell(2, 3, 13);
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Test1')
+data.setCell(3, 1, 'MangoTest2')
 data.setCell(3, 2, 'io.restassured.kt.TestNgBasics')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 2);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'MangoTest2')
+data.setCell(4, 1, 'Test3')
 data.setCell(4, 2, 'io.restassured.kt.TestNgBasics')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1);
 window.suiteTableData['API_Test']= { tableData: data, tableDiv: 'times-div-API_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 ms</span>
+              <span class="suite-total-time">Total running time: 49 ms</span>
               <div id="times-div-API_Test">
               </div> <!-- times-div-API_Test -->
             </div> <!-- times-div -->
@@ -380,40 +335,64 @@ return data;
               <div class="chronological-class-name">io.restassured.kt.TestNgBasics2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">MobileTest</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">io.restassured.kt.TestNgBasics</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test3</span>
-                <span class="method-start">45 ms</span>
+                <span class="method-name">Test1(www.google.com)</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">io.restassured.kt.TestNgBasics2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">WindowsTest</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-start">75 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">io.restassured.kt.TestNgBasics</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test3</span>
+                <span class="method-start">109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MangoTest2</span>
+                <span class="method-start">117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">121 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">70 ms</span>
+                <span class="method-start">122 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest2</span>
-                <span class="method-start">71 ms</span>
+                <span class="method-start">123 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
