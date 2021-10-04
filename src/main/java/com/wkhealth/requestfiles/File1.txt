@@ -1,0 +1,19 @@
+{
+    "customerLookupRequest": {
+        "uuidMetaDataRequest": {
+            "uuid": "MOZU-LWW_598193440",
+            "targetSystemName": "Advantage",
+            "callingSystemName": "MOZU-LWW",
+            "uniqueCallingUserId": "MOZU-LWW",
+            "requestDateTime": "2020-04-16T09:26:59",
+            "serviceName": "CustomerLookup",
+            "serviceVersion": "V2",
+            "svcUsername": "CustomerLookup",
+            "svcPassword": "Q3VzdG9tZXJMb29rdXBfU1RH"
+        },
+        "customerLookupRequestInfo": {
+            "clientId": "MOZU-LWW",
+            "customerNumber": "00000008068"
+        }
+    }
+}

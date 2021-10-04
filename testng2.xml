@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test">
+  <parameter name="URL" value="www.google.com"/>
+  <test name="TestNg Basics 1">
+   <classes>
+     <!-- package.className -->
+     <class name="io.restassured.kt.TestNgBasics"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="TestNg Basics 2">
+  	<groups>
+     <run>
+      <include name="smoke"/>
+     </run>
+  	</groups>
+  	<classes>
+ 	 <class name="io.restassured.kt.TestNgBasics2">
+ 	   <methods>
+ 	    <exclude name="LinuxTest()"/>
+ 	   </methods>
+ 	 </class>
+  	</classes>
+  </test>
+</suite> <!-- Suite -->

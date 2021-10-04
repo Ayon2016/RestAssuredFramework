@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-API_Test">
+              <span class="suite-name border-failed">API Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-API_Test">
+                    <span>C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-API_Test">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-API_Test">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-API_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-API_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-API_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-API_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-API_Test" class="hide-methods failed suite-API_Test"> (hide)</a> <!-- hide-methods failed suite-API_Test -->
+                      <a href="#" panel-name="suite-API_Test" class="show-methods failed suite-API_Test"> (show)</a> <!-- show-methods failed suite-API_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-API_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-API_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-API_Test" class="hide-methods skipped suite-API_Test"> (hide)</a> <!-- hide-methods skipped suite-API_Test -->
+                      <a href="#" panel-name="suite-API_Test" class="show-methods skipped suite-API_Test"> (show)</a> <!-- show-methods skipped suite-API_Test -->
+                    </span>
+                    <div class="method-list-content skipped suite-API_Test">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics" hash-for-method="MangoTest2">MangoTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-API_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API_Test" class="hide-methods passed suite-API_Test"> (hide)</a> <!-- hide-methods passed suite-API_Test -->
+                      <a href="#" panel-name="suite-API_Test" class="show-methods passed suite-API_Test"> (show)</a> <!-- show-methods passed suite-API_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-API_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics2" hash-for-method="MobileTest">MobileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics" hash-for-method="Test3">Test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Test" title="io.restassured.kt.TestNgBasics2" hash-for-method="WindowsTest">WindowsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API_Test" class="panel API_Test">
+          <div class="suite-API_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">io.restassured.kt.TestNgBasics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test1">
+                  </a> <!-- Test1 -->
+                  <span class="method-name">Test1</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method Test1 but has not been marked @Optional or defined
+in C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that a placeOrder Transactions from MOZU-LWW is successful)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test-class-failed -->
+          <div class="suite-API_Test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">io.restassured.kt.TestNgBasics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MangoTest2">
+                  </a> <!-- MangoTest2 -->
+                  <span class="method-name">MangoTest2</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestNgBasics.MangoTest2()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test-class-skipped -->
+          <div class="suite-API_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">io.restassured.kt.TestNgBasics2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MobileTest">
+                  </a> <!-- MobileTest -->
+                  <span class="method-name">MobileTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WindowsTest">
+                  </a> <!-- WindowsTest -->
+                  <span class="method-name">WindowsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test-class-passed -->
+          <div class="suite-API_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">io.restassured.kt.TestNgBasics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test3">
+                  </a> <!-- Test3 -->
+                  <span class="method-name">Test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Test-class-passed -->
+        </div> <!-- panel API_Test -->
+        <div panel-name="test-xml-API_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;API Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestNg Basics 1&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;io.restassured.kt.TestNgBasics&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestNg Basics 1 --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestNg Basics 2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;io.restassured.kt.TestNgBasics2&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;LinuxTest()&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- io.restassured.kt.TestNgBasics2 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestNg Basics 2 --&gt;
+&lt;/suite&gt; &lt;!-- API Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestNg Basics 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestNg Basics 2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">MobileTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API_Test');
+function tableData_API_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'MobileTest')
+data.setCell(0, 2, 'io.restassured.kt.TestNgBasics2')
+data.setCell(0, 3, 18);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Test3')
+data.setCell(1, 2, 'io.restassured.kt.TestNgBasics')
+data.setCell(1, 3, 16);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'WindowsTest')
+data.setCell(2, 2, 'io.restassured.kt.TestNgBasics2')
+data.setCell(2, 3, 13);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test1')
+data.setCell(3, 2, 'io.restassured.kt.TestNgBasics')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'MangoTest2')
+data.setCell(4, 2, 'io.restassured.kt.TestNgBasics')
+data.setCell(4, 3, 0);
+window.suiteTableData['API_Test']= { tableData: data, tableDiv: 'times-div-API_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 47 ms</span>
+              <div id="times-div-API_Test">
+              </div> <!-- times-div-API_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">io.restassured.kt.TestNgBasics2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">LinuxTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.restassured.kt.TestNgBasics</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.restassured.kt.TestNgBasics2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">MobileTest</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.restassured.kt.TestNgBasics</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test3</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.restassured.kt.TestNgBasics2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">WindowsTest</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.restassured.kt.TestNgBasics</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">64 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest2</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

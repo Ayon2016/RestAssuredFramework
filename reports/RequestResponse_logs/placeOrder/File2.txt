@@ -1,0 +1,127 @@
+Request method:	POST
+Request URI:	https://stg-extnahlt.cdn.wkgbssvcs.com/Health/Services/CustomerServices/CustomerLookup/V2.0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "customerLookupRequest": {
+        "customerLookupRequestInfo": {
+            "clientId": "MOZU-LWW",
+            "customerNumber": "000199604897"
+        },
+        "uuidMetaDataRequest": {
+            "serviceVersion": "V2",
+            "callingSystemName": "MOZU-LWW",
+            "uniqueCallingUserId": "MOZU-LWW",
+            "targetSystemName": "Advantage",
+            "requestDateTime": "2020-04-16T09:26:59",
+            "svcUsername": "CustomerLookup",
+            "svcPassword": "Q3VzdG9tZXJMb29rdXBfU1RH",
+            "serviceName": "CustomerLookup",
+            "uuid": "MOZU-LWW_732589327_Retry"
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Wed, 15 Jul 2020 03:59:48 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d738d423efd7c49f515a8be2932088fe91594785587; expires=Fri, 14-Aug-20 03:59:47 GMT; path=/; domain=.cdn.wkgbssvcs.com; HttpOnly; SameSite=Lax
+UUID: MOZU-LWW_732589327_Retry
+X-Original-HTTP-Status-Code: 200
+Set-Cookie: AWSALB=dORsXPhrhD0C5gKHIjOfHapRWBvnk9GJHC+aAsfhBVG20krOuIjNjt8ma/pxYVPAMcoxK3XV2ekKAhgu+kgGe9NrujKICjZa8/9SeVusSZIgLyB93dckvNpE3Fdx; Expires=Wed, 22 Jul 2020 03:59:47 GMT; Path=/, AWSALBCORS=dORsXPhrhD0C5gKHIjOfHapRWBvnk9GJHC+aAsfhBVG20krOuIjNjt8ma/pxYVPAMcoxK3XV2ekKAhgu+kgGe9NrujKICjZa8/9SeVusSZIgLyB93dckvNpE3Fdx; Expires=Wed, 22 Jul 2020 03:59:47 GMT; Path=/; SameSite=None; Secure, JSESSIONID=0EB9AA50FDF5C3D8BA181E40497D7FD2; Path=/esg; HttpOnly
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+CF-Cache-Status: DYNAMIC
+cf-request-id: 03f239f9510000555681811200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5b3092a2188b5556-ORD
+Content-Encoding: gzip
+
+{
+    "customerLookupResponse": {
+        "uuidMetaDataRequest": {
+            "uuid": "MOZU-LWW_732589327_Retry",
+            "targetSystemName": "Advantage",
+            "callingSystemName": "MOZU-LWW",
+            "uniqueCallingUserId": "MOZU-LWW",
+            "requestDateTime": "2020-04-16T09:26:59",
+            "serviceVersion": "V2",
+            "serviceName": "CustomerLookup"
+        },
+        "uuidMetaDataResponse": {
+            "uuid": "MOZU-LWW_732589327_Retry",
+            "providerSystemName": "IIB",
+            "responseDateTime": "2020-07-14 22:59:48",
+            "authenticationSuccessfulFlag": "Y",
+            "esbHostName": "stg-extnahlt.cdn.wkgbssvcs.com",
+            "esbNodeName": "HLTLCLBRK"
+        },
+        "customerLookupResponseInfo": {
+            "status": "OK",
+            "customerInfo": {
+                "customerNumber": "000199604897",
+                "customerType": "FIND",
+                "firstName": "ANGEL",
+                "lastName": "JOHNSON",
+                "middleInitial": " "
+            },
+            "communicationInfo": [
+                {
+                    "uniqueCommunicationId": 1,
+                    "communicationDetails": "abundantlifeRN@outlook.com",
+                    "communicationSubType": "business",
+                    "communicationType": "email",
+                    "communicationSubTypeCode": "BUS",
+                    "communicationTypeCode": "E",
+                    "effectiveFromDate": "",
+                    "effectiveThruDate": ""
+                }
+            ],
+            "companyInfo": {
+                "companyName": "ABUNDANT LIFE THROUGH HEALTH MINIST",
+                "departmentName": "NURSING EDUCATION"
+            },
+            "educationInfo": {
+                "affiliation": " ",
+                "degree": "  ",
+                "specialty": "247",
+                "demographicsLine1": "   247                          "
+            },
+            "addressInfo": [
+                {
+                    "uniqueAddressId": 1,
+                    "addressType": "",
+                    "room": "",
+                    "country": "",
+                    "county": "",
+                    "effectiveFromDate": "",
+                    "effectiveThruDate": "",
+                    "fullZipCodewithExtension": "",
+                    "province": "",
+                    "taxJurisdiction": "",
+                    "timeZone": ""
+                }
+            ],
+            "promotionFlags": {
+                "promoteByEmail": "U",
+                "promoteByFax": " ",
+                "promoteByMail": " ",
+                "promoteByPhone": " "
+            }
+        }
+    }
+}

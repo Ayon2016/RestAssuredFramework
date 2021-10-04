@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="1" total="6" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="API Test" duration-ms="76" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+    <groups>
+      <group name="smoke">
+        <method signature="TestNgBasics2.MobileTest()[pri:0, instance:io.restassured.kt.TestNgBasics2@78047b92]" name="MobileTest" class="io.restassured.kt.TestNgBasics2"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="TestNg Basics 2" duration-ms="69" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+      <class name="io.restassured.kt.TestNgBasics2">
+        <test-method status="PASS" signature="MobileTest()[pri:0, instance:io.restassured.kt.TestNgBasics2@78047b92]" name="MobileTest" duration-ms="18" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileTest -->
+        <test-method status="PASS" signature="WindowsTest()[pri:0, instance:io.restassured.kt.TestNgBasics2@78047b92]" name="WindowsTest" duration-ms="13" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WindowsTest -->
+      </class> <!-- io.restassured.kt.TestNgBasics2 -->
+    </test> <!-- TestNg Basics 2 -->
+    <test name="TestNg Basics 1" duration-ms="76" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+      <class name="io.restassured.kt.TestNgBasics">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="beforeTest" is-config="true" duration-ms="19" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="Test1(java.lang.String)[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="Test1" duration-ms="0" started-at="2021-10-04T01:50:15Z" description="Verify that a placeOrder Transactions from MOZU-LWW is successful" finished-at="2021-10-04T01:50:15Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method Test1 but has not been marked @Optional or defined
+in C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method Test1 but has not been marked @Optional or defined
+in C:\Users\Ayon.Choudhury\RestAssuredKT\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test3()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="Test3" duration-ms="16" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="MangoTest2()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="MangoTest2" duration-ms="0" started-at="2021-10-04T01:50:15Z" depends-on-methods="io.restassured.kt.TestNgBasics.Test1" finished-at="2021-10-04T01:50:15Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgBasics.MangoTest2()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgBasics.MangoTest2()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MangoTest2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest2()[pri:0, instance:io.restassured.kt.TestNgBasics@258e2e41]" name="afterTest2" is-config="true" duration-ms="0" started-at="2021-10-04T01:50:15Z" finished-at="2021-10-04T01:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest2 -->
+      </class> <!-- io.restassured.kt.TestNgBasics -->
+    </test> <!-- TestNg Basics 1 -->
+  </suite> <!-- API Test -->
+</testng-results>

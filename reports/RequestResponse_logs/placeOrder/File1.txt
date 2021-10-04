@@ -1,0 +1,117 @@
+Request method:	POST
+Request URI:	https://stg-extnahlt.cdn.wkgbssvcs.com/Health/Services/CustomerServices/CustomerLookup/V2.0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "customerLookupRequest": {
+        "customerLookupRequestInfo": {
+            "clientId": "MOZU-LWW",
+            "customerNumber": "00000008068"
+        },
+        "uuidMetaDataRequest": {
+            "serviceVersion": "V2",
+            "callingSystemName": "MOZU-LWW",
+            "uniqueCallingUserId": "MOZU-LWW",
+            "targetSystemName": "Advantage",
+            "requestDateTime": "2020-04-16T09:26:59",
+            "svcUsername": "CustomerLookup",
+            "svcPassword": "Q3VzdG9tZXJMb29rdXBfU1RH",
+            "serviceName": "CustomerLookup",
+            "uuid": "MOZU-LWW_598193440_Retry"
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Wed, 15 Jul 2020 03:59:45 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d19859362668a4fdae169a1229475267a1594785584; expires=Fri, 14-Aug-20 03:59:44 GMT; path=/; domain=.cdn.wkgbssvcs.com; HttpOnly; SameSite=Lax
+UUID: MOZU-LWW_598193440_Retry
+X-Original-HTTP-Status-Code: 200
+Set-Cookie: AWSALB=NavlbhUquoLqXy5uYTsmp8/mc1HU1GNo61MlBj140eUeAI/mNUPaUSwO3vj34Q2RAblkRtcx3tqY8q6nTn2ZsfHgEdxltsbxHCcaCQwu+Yfk2IJlEmlFFwuFc41T; Expires=Wed, 22 Jul 2020 03:59:45 GMT; Path=/, AWSALBCORS=NavlbhUquoLqXy5uYTsmp8/mc1HU1GNo61MlBj140eUeAI/mNUPaUSwO3vj34Q2RAblkRtcx3tqY8q6nTn2ZsfHgEdxltsbxHCcaCQwu+Yfk2IJlEmlFFwuFc41T; Expires=Wed, 22 Jul 2020 03:59:45 GMT; Path=/; SameSite=None; Secure, JSESSIONID=E6E538CF250D2D757535B1CBB0220F04; Path=/esg; HttpOnly
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+CF-Cache-Status: DYNAMIC
+cf-request-id: 03f239ef41000003ac08a8e200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5b3092920f4703ac-ORD
+Content-Encoding: gzip
+
+{
+    "customerLookupResponse": {
+        "uuidMetaDataRequest": {
+            "uuid": "MOZU-LWW_598193440_Retry",
+            "targetSystemName": "Advantage",
+            "callingSystemName": "MOZU-LWW",
+            "uniqueCallingUserId": "MOZU-LWW",
+            "requestDateTime": "2020-04-16T09:26:59",
+            "serviceVersion": "V2",
+            "serviceName": "CustomerLookup"
+        },
+        "uuidMetaDataResponse": {
+            "uuid": "MOZU-LWW_598193440_Retry",
+            "providerSystemName": "IIB",
+            "responseDateTime": "2020-07-14 22:59:45",
+            "authenticationSuccessfulFlag": "Y",
+            "esbHostName": "stg-extnahlt.cdn.wkgbssvcs.com",
+            "esbNodeName": "HLTLCLBRK"
+        },
+        "customerLookupResponseInfo": {
+            "status": "OK",
+            "customerInfo": {
+                "customerNumber": "000000008068",
+                "customerType": "FCORP",
+                "middleInitial": " "
+            },
+            "communicationInfo": [
+                
+            ],
+            "companyInfo": {
+                "companyName": "INSTITUTE FUER MEDIZINISCHE"
+            },
+            "educationInfo": {
+                "demographicsLine1": "                                "
+            },
+            "addressInfo": [
+                {
+                    "uniqueAddressId": 1,
+                    "addressType": "",
+                    "addressLine1": "MIKROBIOLOGIE DER UNIVERSITAET",
+                    "addressLine2": "PETERSPLATZ 10",
+                    "room": "",
+                    "city": "BASEL",
+                    "country": "",
+                    "countryCode": "SWI",
+                    "county": "",
+                    "effectiveFromDate": "",
+                    "effectiveThruDate": "",
+                    "fullZipCodewithExtension": "",
+                    "province": "",
+                    "zipCode": "4003",
+                    "taxJurisdiction": "",
+                    "timeZone": ""
+                }
+            ],
+            "promotionFlags": {
+                "promoteByEmail": " ",
+                "promoteByFax": "Y",
+                "promoteByMail": "Y",
+                "promoteByPhone": "Y"
+            }
+        }
+    }
+}

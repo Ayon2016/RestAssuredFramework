@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [API Test]" parallel="tests">
+  <test thread-count="2" name="TestNg Basics 1(failed)" parallel="tests">
+    <classes>
+      <class name="io.restassured.kt.TestNgBasics">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="MangoTest2"/>
+          <include name="Test1"/>
+          <include name="afterTest"/>
+          <include name="afterTest2"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- io.restassured.kt.TestNgBasics -->
+    </classes>
+  </test> <!-- TestNg Basics 1(failed) -->
+</suite> <!-- Failed suite [API Test] -->
